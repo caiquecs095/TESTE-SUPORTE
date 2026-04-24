@@ -44,6 +44,14 @@
     </script>
     
     <style>
+
+        body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: -1;
+}
         /* Modal Animation */
         #thankYouModal > div {
             animation: modalFadeIn 0.3s ease-out;
@@ -73,6 +81,8 @@
             0%, 100% { background-color: rgba(37, 211, 102, 0.1); }
             50% { background-color: rgba(37, 211, 102, 0.3); }
         }
+
+        
     </style>
     
     <!-- Schema Markup -->
@@ -115,7 +125,7 @@
     }
     </script>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-950 text-white">
     <!-- Header -->
     <header class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
